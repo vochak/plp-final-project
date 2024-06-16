@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css'%}"> 
+</head>
+<body>
+    
+</body>
+</html>
+<!--ring div starts here-->
+<div class="ring">
+    <i style="--clr:#00ff0a;"></i>
+    <i style="--clr:#ff0057;"></i>
+    <i style="--clr:#fffd44;"></i>
+    <div class="login">
+      <h2>Signup</h2>
+      <form action="/signup" method="post">
+        {% csrf_token %}
+        
+      <div class="inputBx">
+        <input type="text" id="username" name="username" placeholder="create a Username" required>
+      </div>
+      <br>
+      <div class="inputBx">
+        <input type="text" id="fname" name="fname" placeholder="first name" required>
+      </div>
+      <br>
+      <div class="inputBx">
+        <input type="text" id="lname" name="lname" placeholder="last name" required>
+      </div>
+      <br>
+      <div class="inputBx">
+        <input type="email" id="email" name="email" placeholder="email address" required>
+      </div>
+<br>
+      <div class="inputBx">
+        <input type="password" id="pass1" name="pass1" placeholder="Password" required>
+
+      </div>
+      <br>
+      <div class="inputBx">
+        <input type="password" id="pass2" name="pass2" placeholder="confirm Password" required>
+      </div>
+<br>
+      <div class="inputBx">
+        <input type="submit" value="Sign up">
+      </form>
+      </div>
+      <div class="links">
+        
+        <a href="#"></a>
+      </div>
+    </div>
+  </div>
+  <!--ring div ends here-->
